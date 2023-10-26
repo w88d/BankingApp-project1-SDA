@@ -1,21 +1,29 @@
 package com.BankingApp.mid.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "bank")
 public class Bank {
-
+    // details of bank table
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "address")
     private String address;
 
+    // Relationship from Bank to Account
     @OneToMany(mappedBy = "bank", cascade = CascadeType.ALL)
     private List<Account> accounts;
 }
