@@ -1,11 +1,13 @@
 package com.BankingApp.mid.repository;
 
 import com.BankingApp.mid.model.Account;
+import jakarta.persistence.Id;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,7 +19,6 @@ class AccountRepositoryTest {
 
     @Test
     void findAllById() {
-        //add new account and testing
         Account account1 = new Account();
         account1.setName("Bob");
         account1.setAccountNum("123456");
@@ -35,11 +36,21 @@ class AccountRepositoryTest {
 
     @Test
     void findAllByName() {
+
+
+
+
     }
 
     @Test
     void findByAccountNum() {
+
+
+
     }
+
+
+
 
 
 }

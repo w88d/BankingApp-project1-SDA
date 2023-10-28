@@ -1,5 +1,6 @@
 package com.BankingApp.mid.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class Bank {
     private String address;
 
     // Relationship from Bank to Account
+    @JsonIgnore
     @OneToMany(mappedBy = "bank", cascade = CascadeType.ALL)
     private List<Account> accounts;
 }

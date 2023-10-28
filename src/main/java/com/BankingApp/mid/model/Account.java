@@ -1,6 +1,7 @@
 package com.BankingApp.mid.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class Account {
     private String name;
     private String accountNum;
 // relationship
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "bank_id")
     private Bank bank;
