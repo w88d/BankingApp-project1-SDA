@@ -9,7 +9,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#class-diagram">Class Diagram</a>
+        <li><a href="#uml-class-diagram">UML Class Diagram</a>
         <ul>
         <li><a href="#technologies-used">Technology Used</a></li>
       </ul>
@@ -17,15 +17,18 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#how-to-use">How to Use</a></li>
+      <a href="#controllers-and-routes-structure">Controller</a>
+    </li>
+    <ul>
+        <li><a href="#links">Links</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributors">Contributors</a></li>
+    <li><a href="#future-work">Future Work</a></li>
+    <li><a href="#resources">Resource</a></li>
   </ol>
 </details>
+
+
 
 This project is a banking application system management built with Java and Spring Boot, following REST API best practices. It provides all CRUD operations and implements various routes for GET, POST, PUT/PATCH, and DELETE actions. The application utilizes a MYSQL database to store and manage data through JPA in the Java application. Bearer authentication is implemented for secure access to the system.
 
@@ -34,11 +37,35 @@ This project is a banking application system management built with Java and Spri
 The banking application system management aims to provide a comprehensive solution for managing banking operations. It allows users to perform various banking tasks such as creating accounts, making transactions, managing customer information, and generating reports. The system provides a secure and efficient way to handle banking operations.
 
 <!-- CLASS DIAGRAM -->
-## Class Diagram
+## UML Class Diagram
 refer to the following class diagram to visualize the structure and relationships of the classes in the banking application system management:
 
 
 ![Untitled](https://github.com/w88d/BankingApp-project1-SDA/assets/140564404/750d5975-4045-4d47-9626-ec78fbf6c717)
+
+
+
+
+
+<!-- TECHNOLOGIES USED -->
+## Technologies Used
+The following technologies are used in this project:
+
+- Java
+- Spring Boot
+- MySQL
+- JPA
+- REST API
+- Lambok
+- Postman
+- Git & Github
+
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,java,spring,mysql,postman,hibernate" />
+  </a>
+</p>
 
 
 
@@ -47,28 +74,24 @@ refer to the following class diagram to visualize the structure and relationship
 To set up the project locally, follow these steps:
 
 1. Clone the repository from [repository URL].
-2. Install [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) if not already installed.
+2. Install intelliJ IDEA if not already installed.
 3. Install [MySQL](https://www.mysql.com/downloads/) database server if not already installed.
 4. Create a new database in MySQL for the application.
 5. Update the database configuration in `application.properties` file with your MySQL database credentials.
-6. Build the project using your preferred build tool (e.g., Maven or Gradle).
-7. Run the application using the command `java -jar <path-to-jar-file>`.
+6. Build the project using your preferred build tool (Spring boot Maven with wep tools).
+7. Run the application.
 
-<!-- TECHNOLOGIES USED -->
-## Technologies Used
-The following technologies are used in this project:
 
-- Java: Programming language for the backend application.
-- Spring Boot: Framework for building Java applications.
-- MySQL: Relational database management system.
-- JPA (Java Persistence API): Standard specification for accessing databases in Java applications.
-- REST API: Architectural style for building web services.
-- Bearer Authentication: Authentication mechanism using bearer tokens.
 
 <!-- CONTROLLER -->
 ## Controllers and Routes Structure
 The application follows a structured approach for defining controllers and routes. The routes are mapped to corresponding controller methods to handle different HTTP requests. Below is an example of the routes structure:
 
+- `GET /api/banking`: Retrieve all banking.
+- `POST /api/banking`: Create a new banking.
+- `GET /api/banking/{id}`: Retrieve an bank by ID.
+- `PUT /api/banking/{id}`: Update an bank by name or ID.
+- `DELETE /api/banking/{id}`: Delete an bank by ID.
 - `GET /api/accounts`: Retrieve all accounts.
 - `POST /api/accounts`: Create a new account.
 - `GET /api/accounts/{id}`: Retrieve an account by ID.
@@ -77,10 +100,10 @@ The application follows a structured approach for defining controllers and route
 
 Please refer to the source code for the complete list of routes and their corresponding controllers.
 
-<!-- EXTRA LINKS -->
-## Extra Links
+<!-- LINKS -->
+## Links
 - [Trello Board](https://trello.com/your-trello-board): Track the project's progress and tasks on Trello.
-- [Presentation Slides](https://slideshare.net/your-presentation): Access the presentation slides for the project.
+- [Presentation Slides](https://www.canva.com/design/DAFyZxkCXzc/OvU3IxELO20o_BUS5N11Iw/view?utm_content=DAFyZxkCXzc&utm_campaign=designshare&utm_medium=link&utm_source=editor): Access the presentation slides for the project.
 
 <!-- FUTURE WORK -->
 ## Future Work
