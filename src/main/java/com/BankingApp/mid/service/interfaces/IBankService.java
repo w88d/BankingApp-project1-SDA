@@ -7,4 +7,6 @@ public interface IBankService {
     public Bank getBankById(Long bank);
 
     void updateBank(Bank bank, Long id);
+
+    void deleteBank(Long id);
 }

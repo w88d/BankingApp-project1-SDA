@@ -34,20 +34,7 @@ class AccountRepositoryTest {
         assertEquals(1, accounts.size());
     }
 
-    @Test
-    void findAllByName() {
 
-
-
-
-    }
-
-    @Test
-    void findByAccountNum() {
-
-
-
-    }
 
 
 

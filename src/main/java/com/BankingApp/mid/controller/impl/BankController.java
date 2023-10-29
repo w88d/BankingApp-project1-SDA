@@ -47,9 +47,19 @@ public class BankController implements IBankController {
 
     // **** PUT ****
     @PutMapping("/banking/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateBank(@RequestBody @Valid Bank bank, @PathVariable Long id){
         bankService.updateBank(bank, id);
     }
+
+
+    // **** DELETE ****
+    @DeleteMapping("/banking/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteBank(@PathVariable Long id){
+        bankService.deleteBank(id);
+    }
+
 
 
 
