@@ -102,7 +102,6 @@ Please refer to the source code for the complete list of routes and their corres
 
 <!-- LINKS -->
 ## Links
-- [Trello Board](https://trello.com/your-trello-board): Track the project's progress and tasks on Trello.
 - [Presentation Slides](https://www.canva.com/design/DAFyZxkCXzc/OvU3IxELO20o_BUS5N11Iw/view?utm_content=DAFyZxkCXzc&utm_campaign=designshare&utm_medium=link&utm_source=editor): Access the presentation slides for the project.
 
 <!-- FUTURE WORK -->
